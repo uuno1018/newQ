@@ -13,7 +13,7 @@ Vue.use(VueRouter)
     name: 'Home',
     component: Home,
     meta: {
-      requireAuth:true
+      requiresAuth:true
     }
   },
   {
@@ -24,7 +24,7 @@ Vue.use(VueRouter)
     // which is lazy-loaded when the route is visited.
     component: () => import(/* webpackChunkName: "about" */ '../views/About.vue'),
     meta: {
-      requireAuth:true
+      requiresAuth:true
     }
   },
   {
